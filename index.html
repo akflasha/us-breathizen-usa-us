@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<title>Breathizen® | Official Site | Herbal Lung Support</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+
+<style>
+   /* BreathiZen Rating + Customer Review Section */
+
+.rating-wrap{
+  max-width:1040px;
+  margin:0 auto 48px;
+  display:flex;
+  justify-content:center;
+}
+
+.rating-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:26px;
+  background:#fff;
+  border:2px solid #e5e9ef;
+  border-radius:60px;
+  padding:22px 38px;
+  box-shadow:0 20px 45px rgba(18,31,48,.10);
+}
+
+.rating-row .stars{
+  color:#f59a00;
+  font-size:38px;
+  line-height:1;
+  letter-spacing:2px;
+  white-space:nowrap;
+}
+
+.rating-row [itemprop="aggregateRating"]{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+}
+
+.rating-row strong{
+  color:#18202d;
+  font-size:30px;
+  line-height:1;
+  font-weight:900;
+}
+
+.rating-row span{
+  color:#5f6774;
+  font-size:29px;
+  line-height:1;
+  font-weight:400;
+}
+
+
+/* Customer Section Heading */
+
+#breathizen-reviews .cr-heading{
+  text-align:center;
+  margin-bottom:34px;
+}
+
+#breathizen-reviews .cr-heading h2{
+  font-size:46px;
+  margin:0;
+  color:#18202d;
+  font-weight:900;
+}
+
+
+/* Sliding Customer Gallery */
+
+#breathizen-reviews .cr-slider{
+  width:100%;
+  overflow:hidden;
+  margin:0 auto 48px;
+}
+
+#breathizen-reviews .cr-slider-viewport{
+  overflow:hidden;
+  width:100%;
+}
+
+#breathizen-reviews .cr-ugc-strip{
+  display:flex;
+  justify-content:flex-start!important;
+  align-items:stretch;
+  gap:18px;
+  width:max-content;
+  overflow:visible!important;
+  will-change:transform;
+}
+
+#breathizen-reviews .cr-ugc{
+  margin:0;
+  flex:0 0 205px;
+  background:#fff;
+  border-radius:18px;
+  padding:10px;
+  box-shadow:0 9px 25px rgba(0,0,0,.10);
+}
+
+#breathizen-reviews .cr-ugc img{
+  width:185px;
+  height:175px;
+  object-fit:cover;
+  border-radius:11px;
+}
+
+
+/* Detailed Review Cards */
+
+#breathizen-reviews .cr-card{
+  width:100%;
+  max-width:1040px;
+  margin:0 auto 24px;
+  padding:24px;
+  background:#fff;
+  border:1px solid #e5e8ec;
+  border-radius:20px;
+  box-shadow:0 10px 28px rgba(20,35,50,.07);
+}
+
+#breathizen-reviews .cr-card-top{
+  display:grid;
+  grid-template-columns:125px minmax(0,1fr);
+  gap:25px;
+  align-items:start;
+}
+
+#breathizen-reviews .cr-avatar{
+  width:125px!important;
+  height:125px!important;
+  max-width:125px!important;
+  min-width:125px!important;
+  border:0!important;
+  border-radius:16px!important;
+  object-fit:cover!important;
+}
+
+#breathizen-reviews .cr-title{
+  color:#18202d;
+  font-size:27px;
+  line-height:1.2;
+  margin:0 0 10px;
+  font-weight:900;
+}
+
+#breathizen-reviews .cr-meta{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.review-stars{
+  color:#f59a00;
+  letter-spacing:2px;
+  font-size:23px;
+  font-weight:900;
+  line-height:1;
+}
+
+#breathizen-reviews .cr-verified{
+  color:#e77800;
+  font-size:16px;
+  font-weight:800;
+}
+
+#breathizen-reviews .cr-card p{
+  font-size:18px;
+  line-height:1.6;
+  margin:8px 0;
+}
+
+#breathizen-reviews .cr-bottom{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-top:16px;
+}
+
+#breathizen-reviews .cr-bottle img{
+  width:105px;
+  max-height:80px;
+  object-fit:contain;
+}
+
+#breathizen-reviews .cr-purchase-name{
+  font-size:17px!important;
+  font-weight:700;
+}
+
+#breathizen-reviews .cr-purchase-line{
+  font-size:17px!important;
+  color:#0D83DE!important;
+  font-weight:800;
+}
+
+
+/* Text-only reviews */
+
+.text-review-list{
+  max-width:1040px;
+  margin:42px auto 0;
+  display:grid;
+  gap:20px;
+}
+
+.text-review-card{
+  background:#fff;
+  border:1px solid #e5e5e5;
+  border-radius:18px;
+  padding:26px 28px;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.text-review-rating{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:15px;
+}
+
+.text-review-verified{
+  color:#e77800;
+  font-size:16px;
+  font-weight:800;
+}
+
+.text-review-card h3{
+  color:#171717;
+  font-size:25px;
+  margin:0 0 12px;
+  font-weight:900;
+}
+
+.text-review-card p{
+  font-size:19px!important;
+  line-height:1.6!important;
+  margin:0 0 15px!important;
+}
+
+.text-review-author{
+  color:#666;
+  font-size:17px;
+}
+
+
+/* Mobile */
+
+@media(max-width:640px){
+
+  .rating-wrap{
+    margin-bottom:34px;
+  }
+
+  .rating-row{
+    gap:12px;
+    padding:15px 18px;
+    border-radius:40px;
+  }
+
+  .rating-row .stars{
+    font-size:23px;
+    letter-spacing:0;
+  }
+
+  .rating-row strong{
+    font-size:20px;
+  }
+
+  .rating-row span{
+    font-size:17px;
+  }
+
+  #breathizen-reviews .cr-heading h2{
+    font-size:30px;
+  }
+
+  #breathizen-reviews .cr-ugc{
+    flex-basis:155px;
+  }
+
+  #breathizen-reviews .cr-ugc img{
+    width:135px;
+    height:130px;
+  }
+
+  #breathizen-reviews .cr-card{
+    padding:18px;
+  }
+
+  #breathizen-reviews .cr-card-top{
+    grid-template-columns:75px minmax(0,1fr);
+    gap:13px;
+  }
+
+  #breathizen-reviews .cr-avatar{
+    width:75px!important;
+    height:75px!important;
+    max-width:75px!important;
+    min-width:75px!important;
+    border-radius:11px!important;
+  }
+
+  #breathizen-reviews .cr-title{
+    font-size:21px;
+  }
+
+  #breathizen-reviews .cr-card p{
+    font-size:16px;
+  }
+
+  .review-stars{
+    font-size:19px;
+  }
+
+  #breathizen-reviews .cr-verified,
+  .text-review-verified{
+    font-size:14px;
+  }
+
+  #breathizen-reviews .cr-bottom{
+    grid-column:1 / -1;
+  }
+
+  .text-review-card{
+    padding:20px;
+  }
+
+  .text-review-card h3{
+    font-size:22px;
+  }
+
+  .text-review-card p{
+    font-size:17px!important;
+  }
+}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Roboto Condensed",Arial,sans-serif;color:#171717;background:#fff;line-height:1.55;font-size:18px}img{max-width:100%;height:auto;display:block}a{color:inherit}section{overflow:hidden}header{position:sticky;top:0;z-index:100;background:#0D83DE}.navbar{max-width:1120px;margin:auto;min-height:78px;display:flex;align-items:center;justify-content:space-between;padding:10px 24px}.logo-wordmark{font-size:32px;font-weight:800;text-decoration:none;color:#fff}.nav-links{display:flex;gap:42px;align-items:center}.nav-links a{text-decoration:none;font-weight:700;color:#fff;font-size:19px}.order-btn{background:#ffe000;color:#111!important;padding:12px 24px;border-radius:8px;font-weight:800}.hamburger{display:none;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}
+.hero-section{padding:52px 20px 36px;background:#fff}.hero-container{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1.08fr;gap:55px;align-items:center}.hero-image img{width:100%;max-width:510px;margin:auto;object-fit:contain}.hero-content h1{font-size:48px;line-height:1.05;margin:0 0 24px;font-weight:900;color:#050505}.tagline{display:block;font-size:26px;font-weight:800;color:#0D83DE;margin-bottom:24px}.hero-content p{font-size:21px;margin:0 0 22px}.tick-list{padding:0;margin:0;list-style:none;font-size:20px}.tick-list li{position:relative;padding-left:40px;margin:14px 0}.tick-list li:before{content:"✓";position:absolute;left:0;top:0;width:27px;height:27px;border-radius:50%;background:#e8f7ed;color:#20a653;display:flex;align-items:center;justify-content:center;font-weight:900}.hero-cta{text-align:center;max-width:680px;margin:28px auto 0}.hero-btn{display:block;background:#ef4b16;color:#fff!important;padding:17px 28px;border-radius:7px;text-decoration:none;font-size:28px;font-weight:900;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.customer-reviews-section,.whatis-section,.benefits-section,.how-it-works-section,.ingredients-section,.faq-section,.moneyback-guarantee-section{padding:48px 20px}.cr-container,.whatis-content,.benefits-content,.how-it-works-content,.ingredients-content,.faq-container,.moneyback-container{max-width:1040px;margin:auto}.cr-heading h2,.whatis-header h2,.benefits-header h2,.how-it-works-header h2,.ingredients-header h2,.faq-heading,.moneyback-title,.pricing-heading h2{text-align:center;font-size:36px;line-height:1.15;color:#050505;margin:0 0 35px;font-weight:900}.cr-ugc-strip{display:flex;justify-content:center;gap:18px;margin:0 auto 42px;overflow:hidden}.cr-ugc{margin:0;flex:0 0 135px}.cr-ugc img{width:135px;height:118px;object-fit:cover;border-radius:4px}.cr-card{padding:20px 0;margin:0 auto 12px;max-width:900px;background:#fff}.cr-card-top{display:flex;gap:20px;align-items:flex-start}.cr-avatar{width:62px!important;height:62px!important;object-fit:cover;border-radius:50%;border:4px solid #e5e5e5;flex:0 0 62px}.cr-top-content{flex:1}.cr-title{font-size:22px;line-height:1.2;margin:0 0 4px;color:#0D83DE;font-weight:800}.cr-meta{display:flex;align-items:center;gap:10px;margin-bottom:8px}.cr-stars-img{width:90px!important;height:auto}.cr-verified{font-size:14px;color:#e77800;font-weight:700}.cr-card p{font-size:16px;line-height:1.45;margin:8px 0}.cr-bottom{display:flex;align-items:center;gap:18px}.cr-bottle img{width:70px;max-height:55px;object-fit:contain}.cr-purchase-name,.cr-purchase-line{margin:2px 0!important}.cr-purchase-line{color:#0D83DE;font-weight:700}.cr-slider{display:block}.cr-slider-viewport{overflow:hidden}
+.pricing-section-main{padding:34px 20px 12px;background:#0D83DE}.pricing-heading h2{color:#fff;font-size:35px;margin:0;font-weight:900}.bottom-arrow-divider{width:0;height:0;border-left:280px solid transparent;border-right:280px solid transparent;border-top:48px solid #0D83DE;margin:0 auto}.pricing-section{padding:12px 20px 38px;background:#fff}.pricing-wrapper{max-width:1040px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:center}.price-box img{width:100%;height:auto;object-fit:contain}.price-box a{display:block}
+.whatis-section{background:#f7f7f7}.whatis-header,.benefits-header,.how-it-works-header,.ingredients-header{max-width:1040px;margin:auto}.whatis-content{display:grid;grid-template-columns:350px 1fr;gap:34px;align-items:start}.whatis-image img{width:100%;max-height:625px;object-fit:cover;border-radius:10px}.whatis-text p,.benefits-content p,.how-it-works-content p,.ingredients-content p,.moneyback-text-wrapper p,.faq-answer p{font-size:18px;line-height:1.65;margin:0 0 16px}
+.benefits-section{background:#fff}.benefits-list,.how-it-works-list,.ingredients-list{list-style:none;padding:0;margin:20px 0}.benefits-list li{position:relative;padding:0 0 0 40px;margin:18px 0;font-size:18px;line-height:1.55}.benefits-list li:before{content:"✓";position:absolute;left:0;top:3px;width:25px;height:25px;border-radius:50%;background:#24a655;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}.benefits-tick{display:none}.how-it-works-section{background:#f7f7f7}.how-it-works-list li{padding:0;margin:24px 0;font-size:18px;line-height:1.65}.how-it-works-list-content{display:block;font-size:19px;font-weight:800;color:#171717;margin-bottom:6px}.ingredients-section{background:#fff}.ingredients-subheading{font-size:19px;margin:24px 0 14px}.ingredients-list li{display:flex;align-items:flex-start;gap:10px;padding:0;margin:18px 0;font-size:17px;line-height:1.55}.ingredients-circle{display:flex;flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#24a655;color:#fff;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:2px}.ingredients-list-content{font-weight:800;color:#171717}
+.moneyback-guarantee-section{background:#f7f7f7}.moneyback-title{color:#0D83DE;font-size:32px;margin-bottom:28px}.moneyback-content{display:grid;grid-template-columns:190px 1fr;gap:32px;align-items:center}.moneyback-badge{width:185px;margin:auto}.moneyback-icons{text-align:center;margin:22px auto 8px}.moneyback-icons img{max-width:500px;margin:auto;max-height:85px;object-fit:contain}.moneyback-note{text-align:center;font-size:16px}.faq-item{border-bottom:1px solid #ddd}.faq-question{font-size:21px;cursor:pointer;padding:18px 0;margin:0;display:flex;justify-content:space-between;gap:20px}.faq-answer{display:none;padding:0 0 18px}.faq-item.active .faq-answer{display:block}.interlinks-section{padding:28px 20px;background:#f4f4f4}.footer-links{max-width:1040px;margin:auto;display:flex;flex-wrap:wrap;gap:18px 28px;justify-content:center;list-style:none;padding:0}.footer-links a{font-size:15px}.site-footer{background:#222;color:#e9e9e9;padding:35px 20px}.footer-disclaimer{max-width:1040px;margin:auto;font-size:14px;line-height:1.55}.copyright{text-align:center;margin-top:25px}.copyright-link{color:#fff}.image-blank{display:none}
+@media(max-width:900px){.navbar{min-height:66px}.logo-wordmark{font-size:28px}.hamburger{display:block}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#0D83DE;flex-direction:column;gap:0;padding:8px 20px 18px;box-shadow:0 8px 15px rgba(0,0,0,.12)}.nav-links.show{display:flex}.nav-links a{width:100%;text-align:center;padding:12px}.order-btn{margin-top:6px}.hero-container{grid-template-columns:1fr;gap:22px}.hero-image{order:0}.hero-content{order:1}.hero-image img{max-width:520px}.whatis-content{grid-template-columns:300px 1fr;gap:26px}.pricing-wrapper{gap:10px}.bottom-arrow-divider{border-left-width:180px;border-right-width:180px}}
+@media(max-width:640px){body{font-size:17px}.navbar{padding:8px 16px}.logo-wordmark{font-size:25px}.hero-section{padding:28px 16px 28px}.hero-container{gap:18px}.hero-image img{max-width:350px}.hero-content h1{font-size:38px;text-align:center;margin-bottom:12px}.tagline{text-align:center;font-size:22px;margin-bottom:18px}.hero-content p{font-size:18px}.tick-list{font-size:17px}.tick-list li{padding-left:34px;margin:11px 0}.hero-cta{margin-top:22px}.hero-btn{font-size:22px;padding:14px 16px}.customer-reviews-section,.whatis-section,.benefits-section,.how-it-works-section,.ingredients-section,.faq-section,.moneyback-guarantee-section{padding:36px 16px}.cr-heading h2,.whatis-header h2,.benefits-header h2,.how-it-works-header h2,.ingredients-header h2,.faq-heading,.moneyback-title,.pricing-heading h2{font-size:28px;margin-bottom:26px}.cr-ugc-strip{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin-bottom:28px}.cr-ugc{flex-basis:105px;scroll-snap-align:start}.cr-ugc img{width:105px;height:95px}.cr-card-top{gap:12px}.cr-avatar{width:50px!important;height:50px!important;flex-basis:50px}.cr-title{font-size:20px}.cr-card p{font-size:15.5px}.cr-bottom{align-items:flex-start}.pricing-section-main{padding:28px 14px 10px}.pricing-heading h2{font-size:27px}.bottom-arrow-divider{border-left-width:95px;border-right-width:95px;border-top-width:28px}.pricing-section{padding:12px 14px 30px}.pricing-wrapper{grid-template-columns:1fr;gap:18px;max-width:390px}.price-box:nth-child(2){order:-1}.whatis-content{grid-template-columns:1fr;gap:22px}.whatis-image img{max-width:340px;margin:auto;max-height:none}.whatis-text p,.benefits-content p,.how-it-works-content p,.ingredients-content p,.moneyback-text-wrapper p,.faq-answer p{font-size:17px;line-height:1.6}.benefits-list li,.how-it-works-list li{font-size:17px}.ingredients-list li{font-size:16px}.moneyback-content{grid-template-columns:1fr;gap:18px}.moneyback-badge{width:170px}.moneyback-icons img{max-width:100%}.faq-question{font-size:19px}.footer-links{display:grid;grid-template-columns:1fr 1fr;text-align:center;gap:12px}.site-footer{padding:28px 16px}.footer-disclaimer{font-size:13px}}
+
+/* Review + FAQ fixes */
+.customer-reviews-section{background:#fff;overflow:hidden}
+.cr-container{width:100%;max-width:1040px;margin:0 auto}
+.cr-card{max-width:900px;width:100%;box-sizing:border-box}
+.cr-card-top{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;align-items:start}
+.cr-card-top>img{width:64px!important;height:64px!important;max-width:64px!important;min-width:64px!important;object-fit:cover!important;object-position:center;border-radius:50%;border:4px solid #e5e5e5;display:block}
+.cr-top-content{min-width:0;width:100%}
+.cr-meta .image-blank{display:block;width:auto;height:auto}
+.cr-meta .image-blank:before{content:'★★★★★';color:#f4a000;font-size:18px;letter-spacing:1px}
+.faq-question{user-select:none}
+.faq-toggle-icon{transition:transform .2s ease;flex:0 0 auto}
+.faq-item.active .faq-toggle-icon{transform:rotate(180deg)}
+@media(max-width:640px){.cr-card{padding:16px 0}.cr-card-top{grid-template-columns:52px minmax(0,1fr);gap:12px}.cr-card-top>img{width:52px!important;height:52px!important;max-width:52px!important;min-width:52px!important}.cr-title{font-size:19px}.cr-meta{flex-wrap:wrap}.cr-bottom{display:grid;grid-template-columns:65px minmax(0,1fr);gap:12px}.faq-question{align-items:center;padding:17px 0}}
+
+/* Auto-sliding BreathiZen customer gallery */
+.cr-slider-viewport{overflow:hidden;width:100%;}
+.cr-ugc-strip{justify-content:flex-start!important;overflow:visible!important;width:max-content;gap:18px;will-change:transform;}
+.cr-ugc{flex:0 0 135px;}
+.cr-ugc img{display:block;width:135px;height:118px;object-fit:cover;border-radius:5px;}
+@media(max-width:640px){.cr-ugc-strip{gap:12px;margin-bottom:28px}.cr-ugc{flex-basis:105px}.cr-ugc img{width:105px;height:95px}}
+
+/* BreathiZen custom fixes */
+.evidence-note{display:none!important}
+.review-cards-wrap{display:grid;gap:26px;margin-top:8px}
+.review-showcase-card{display:grid;grid-template-columns:minmax(250px,360px) minmax(0,1fr);gap:32px;align-items:center;background:#efefef;border:2px solid #d6c2a3;border-radius:28px;padding:34px 36px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.review-showcase-media img{width:100%;height:100%;max-height:380px;object-fit:cover;border-radius:24px;display:block}
+.review-showcase-content h3{font-size:32px;line-height:1.2;margin:0 0 18px;color:#1c1c1c;font-weight:900}
+.review-showcase-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.review-showcase-verified{font-size:18px;font-weight:800;color:#0f2eb0}
+.review-showcase-content p{font-size:24px;line-height:1.6;margin:0 0 22px;color:#222}
+.review-showcase-name{margin:10px 0 0!important;padding-left:18px;border-left:5px solid #2287df;color:#1432ad;font-size:22px!important;font-weight:900}
+.pricing-section-two-offers{padding-top:18px;padding-bottom:44px}
+.pricing-wrapper-two{max-width:980px;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.price-box-image-only a{display:block;background:#fff;border-radius:20px;padding:0;box-shadow:0 12px 28px rgba(0,0,0,.08);overflow:hidden}
+.price-box-image-only img{display:block;width:100%;height:auto;object-fit:contain}
+.moneyback-guarantee-section{background:#ececec!important;padding:60px 20px}
+.breathizen-guarantee-layout{grid-template-columns:420px 1fr;gap:48px;align-items:center}
+.guarantee-image-wrap img{width:100%;max-width:390px;margin:auto;display:block}
+.moneyback-title{color:#1880db!important;font-size:38px;margin-bottom:34px;text-align:center;font-weight:900}
+.breathizen-guarantee-layout .moneyback-text-wrapper p{font-size:25px;line-height:1.65;color:#222;margin:0 0 24px}
+.guarantee-cta{display:inline-flex!important;align-items:center;gap:12px;background:#ffe100!important;color:#147ee0!important;box-shadow:0 10px 24px rgba(0,0,0,.12);font-size:28px!important;padding:19px 42px!important;border-radius:18px!important}
+.guarantee-cta span{font-size:42px;line-height:1}
+.whatis-image img{width:100%;max-height:625px;object-fit:cover;border-radius:14px}
+@media(max-width:900px){.review-showcase-card{grid-template-columns:1fr;gap:22px;padding:24px}.review-showcase-media img{max-height:420px}.review-showcase-content h3{font-size:28px}.review-showcase-content p{font-size:21px}.review-showcase-name{font-size:20px!important}.pricing-wrapper-two{grid-template-columns:1fr 1fr;gap:18px}.breathizen-guarantee-layout{grid-template-columns:1fr;gap:24px}.guarantee-image-wrap img{max-width:310px}.breathizen-guarantee-layout .moneyback-text-wrapper p{font-size:21px}.moneyback-title{font-size:32px}}
+@media(max-width:640px){#breathizen-reviews .cr-heading h2{font-size:30px}.review-showcase-card{padding:18px 16px;border-radius:22px}.review-showcase-media img{max-height:320px;border-radius:16px}.review-showcase-content h3{font-size:22px;margin-bottom:12px}.review-showcase-verified{font-size:16px}.review-showcase-content p{font-size:17px;line-height:1.55;margin-bottom:16px}.review-showcase-name{font-size:18px!important;padding-left:12px}.pricing-wrapper-two{grid-template-columns:1fr;max-width:390px}.moneyback-guarantee-section{padding:40px 16px}.moneyback-title{font-size:28px;line-height:1.2}.breathizen-guarantee-layout .moneyback-text-wrapper p{font-size:17px;line-height:1.6}.guarantee-cta{font-size:22px!important;padding:15px 22px!important;width:100%;justify-content:center}.guarantee-cta span{font-size:30px}}
+
+.breathizen-footer-community{padding:52px 20px;background:#f8fafc}
+.breathizen-footer-community-inner{max-width:1120px;margin:0 auto}
+.breathizen-footer-community h2{font-size:36px;line-height:1.2;text-align:center;margin:0 0 20px}
+.breathizen-footer-collage{display:block;width:100%;max-width:760px;height:auto;margin:24px auto 32px;border-radius:12px}
+.breathizen-sample-note{max-width:1000px;margin:12px auto 24px;font-size:15px;line-height:1.5;color:#526174;text-align:center}
+.breathizen-mini-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.breathizen-mini-review{border:1px solid #dfe7ee;border-radius:14px;background:#fff;padding:20px;box-shadow:0 4px 13px rgba(0,0,0,.04)}
+.breathizen-mini-review h3{font-size:20px;font-weight:800;margin:0 0 8px;color:#0D83DE}
+.breathizen-mini-review p{font-size:18px;line-height:1.5;margin:0}
+@media(max-width:640px){.breathizen-footer-community{padding:34px 16px}.breathizen-footer-community h2{font-size:28px}.breathizen-mini-reviews{grid-template-columns:1fr}.breathizen-mini-review{padding:17px}}
+
+/* Latest BreathiZen ratings and white footer */
+.breathizen-rating-widget{max-width:750px;margin:0 auto 34px;display:flex;gap:15px;justify-content:center;align-items:center;flex-wrap:wrap;border:1px solid #e0e8f3;border-radius:20px;padding:15px 22px;background:#fff;box-shadow:0 8px 22px rgba(0,0,0,.06)}
+.breathizen-rating-widget .stars{color:#f4b000;font-size:28px;letter-spacing:2px;white-space:nowrap}
+.breathizen-rating-content{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.breathizen-rating-content strong{font-size:25px;color:#18202d}
+.breathizen-rating-content span{font-size:20px;color:#4b5563}
+.site-footer{background:#fff!important;color:#222!important;border-top:1px solid #e5e7eb}
+.site-footer a{color:#0D83DE!important}
+@media(max-width:640px){.breathizen-rating-widget{padding:12px}.breathizen-rating-widget .stars{font-size:23px}.breathizen-rating-content strong{font-size:22px}.breathizen-rating-content span{font-size:17px}}
+  </style>
+<style>
+   .product-placeholder{min-height:370px;background:linear-gradient(135deg,#e9f6ff,#b9e2ff);border:2px solid #a4d6fb;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:35px;color:#075b9c;box-shadow:0 15px 38px #0d83de20}.product-placeholder span{font-size:54px;font-weight:900}.product-placeholder small{font-size:23px;font-weight:700}.product-placeholder p{font-size:19px}.product-placeholder.tall{min-height:470px}.package{border:2px solid #d3eafa;border-radius:16px;padding:26px 14px;text-align:center;box-shadow:0 12px 25px #0d83de16}.package h3{font-size:27px;margin:0 0 14px}.mini-bottle{margin:0 auto 16px;width:110px;height:155px;border-radius:15px 15px 22px 22px;background:linear-gradient(100deg,#075d9d,#0D83DE,#48a9ed);border-top:22px solid #e6f4ff;color:white;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;box-shadow:5px 9px 15px #0002}.package p{font-size:17px;min-height:55px}.package-cta{background:#ffe000;color:#111;text-decoration:none;font-weight:900;padding:13px 8px;border-radius:8px}.evidence-note{text-align:center;max-width:850px;margin:20px auto;font-size:15px;color:#59616a;padding:0 12px}.guarantee-badge{width:170px;height:170px;border:9px solid #0D83DE;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#0D83DE;font-size:64px;font-weight:900;line-height:1}.guarantee-badge small{font-size:22px}.guarantee-badge span{font-size:17px}.inline-cta{display:inline-block;font-size:22px;margin:10px 0}.text-review-list{margin-top:12px}.hero-image{min-width:0}@media(max-width:640px){.product-placeholder{min-height:300px}.product-placeholder span{font-size:42px}.moneyback-content{grid-template-columns:1fr}.guarantee-badge{margin:auto}.package p{min-height:0}}
+  </style>
+<style>
+   /* BreathiZen image integration */
+.hero-image img{width:100%;max-height:580px;object-fit:contain;margin:auto}.whatis-image img{width:100%;height:auto;object-fit:contain;border-radius:12px}.price-box .package>img{width:100%;height:285px;object-fit:contain;margin:12px auto}.ms-photo-gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px 0 20px}.ms-photo-gallery img{width:150px;height:150px;object-fit:cover;flex:0 0 150px;border-radius:14px;scroll-snap-align:start}.ms-extra-media{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px auto}.ms-extra-media img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}.ms-label-image img{width:100%;max-width:780px;margin:22px auto;object-fit:contain}.ms-badge-row{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin:25px auto}.ms-badge-row img{width:105px;height:105px;object-fit:contain}.hero-cta>img{max-width:400px;width:85%;height:auto;margin:18px auto}.moneyback-content>img{max-width:180px;width:100%;height:auto;object-fit:contain}.moneyback-guarantee-section>img,.moneyback-container>img{max-width:600px;width:90%;height:auto;margin:25px auto}.ms-editorial-photos{text-align:center;padding:34px 20px;max-width:1060px;margin:0 auto}.ms-editorial-photos h2{font-size:32px}.ms-editorial-photos>img{max-width:220px;width:29%;height:240px;object-fit:contain;display:inline-block;margin:10px}.ms-editorial-photos>img:last-child{max-width:300px}@media(max-width:640px){.ms-photo-gallery img{width:118px;height:118px;flex-basis:118px}.ms-extra-media{grid-template-columns:repeat(2,1fr)}.price-box .package>img{height:290px}.ms-editorial-photos>img{width:44%;height:190px}}
+  </style>
+<meta content="Breathizen is an herbal lung support formula designed for people seeking daily help with airway comfort, clear breathing, and respiratory wellness." name="description"/><meta content="website" property="og:type"/><meta content="BreathiZen" property="og:site_name"/><meta content="Breathizen® | Official Site | Herbal Lung Support" property="og:title"/><meta content="Breathizen is an herbal lung support formula designed for people seeking daily help with airway comfort, clear breathing, and respiratory wellness." property="og:description"/><meta content="https://us-breathizen-usa-us.vercel.app/" property="og:url"/><meta content="https://us-breathizen-usa-us.vercel.app/mind-safeimges/breathizen-official.webp" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Breathizen® | Official Site | Herbal Lung Support" name="twitter:title"/><meta content="Breathizen is an herbal lung support formula designed for people seeking daily help with airway comfort, clear breathing, and respiratory wellness." name="twitter:description"/><meta content="https://us-breathizen-usa-us.vercel.app/mind-safeimges/breathizen-official.webp" name="twitter:image"/><meta content="#4185A5" name="theme-color"/><link href="https://us-breathizen-usa-us.vercel.app/" rel="canonical"/><link href="mind-safeimges/favicon.png" rel="icon"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://us-breathizen-usa-us.vercel.app/#organization",
+      "name": "BreathiZen",
+      "url": "https://us-breathizen-usa-us.vercel.app/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://us-breathizen-usa-us.vercel.app/#website",
+      "url": "https://us-breathizen-usa-us.vercel.app/",
+      "name": "BreathiZen",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://us-breathizen-usa-us.vercel.app/#webpage",
+      "url": "https://us-breathizen-usa-us.vercel.app/",
+      "name": "Breathizen® | Official Site | Herbal Lung Support",
+      "description": "Breathizen is an herbal lung support formula designed for people seeking daily help with airway comfort, clear breathing, and respiratory wellness.",
+      "isPartOf": {
+        "@id": "https://us-breathizen-usa-us.vercel.app/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Product",
+      "name": "BreathiZen",
+      "description": "BreathiZen botanical respiratory wellness liquid spray featuring Mullein, Ginger and Organic Lemon extracts.",
+      "image": "https://us-breathizen-usa-us.vercel.app/mind-safeimges/breathizen-official.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "BreathiZen"
+      }
+    },
+    ,"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"95311","bestRating":"5","worstRating":"1"}},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is BreathiZen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BreathiZen is a liquid botanical dietary supplement intended to support normal respiratory wellness and healthy breathing as part of an overall wellness routine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the main BreathiZen ingredients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Its featured botanical extracts are Mullein leaf, Ginger root and Organic Lemon. The supplied reference describes a 154 mg proprietary blend; check your bottle for complete labeling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I take BreathiZen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied label instructions indicate four sprays directly into the mouth or onto the tongue once daily. Follow the instructions on your current product packaging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BreathiZen a capsule or a spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BreathiZen is described as a 2 oz / 60 ml liquid spray, not a capsule or powder."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will BreathiZen treat asthma, COPD or bronchitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. BreathiZen is not intended to diagnose, treat, cure or prevent any disease and should not replace medications, inhalers or care recommended by a healthcare professional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should speak with a doctor before use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone who is pregnant, nursing, taking medication, managing a medical condition or unsure about the listed ingredients should seek individualized medical advice first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly should I expect results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Individual experiences vary, and no specific timeframe or health outcome is guaranteed. Do not delay medical care while waiting to see whether a supplement helps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What package sizes are shown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The original layout displays multiple bottle bundles. Review each pictured option and check the live checkout for current bundle contents and pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does BreathiZen offer a money-back guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied marketing reference mentions a 60-day satisfaction guarantee. Please confirm the current eligibility and refund conditions directly on the checkout page before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I order BreathiZen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select one of the package images or order buttons on this page to visit the designated BreathiZen checkout."
+          }
+        }
+      ]
+    }
+  ]
+}</script><style>
+:root{--primary:#4185A5;--brand:#4185A5;--accent:#4185A5}html{scroll-behavior:smooth}body{font-size:18px;overflow-x:hidden}p,li{font-size:clamp(18px,1.35vw,20px);line-height:1.7}img{max-width:100%;height:auto}a:focus-visible,button:focus-visible{outline:3px solid #4185A5;outline-offset:3px}h1,h2,h3{overflow-wrap:break-word}a[href*="breathizen.nbcnewsusa.com/order"]{cursor:pointer} @media(max-width:700px){body{font-size:18px}p,li{font-size:18px}}
+</style></head>
+<body>
+<header>
+<div class="navbar">
+<div class="logo">
+<a class="logo-wordmark" href="https://us-breathizen-usa-us.vercel.app/">BreathiZen</a>
+</div>
+<button aria-label="Toggle menu" class="hamburger" onclick="toggleMenu()">
+     ☰
+    </button>
+<nav class="nav-links" id="navMenu">
+<a href="#breathizen-benefits">Benefits</a>
+<a href="#breathizen-ingredients">Ingredients</a>
+<a href="#breathizen-faq">FAQ</a>
+<a class="order-btn" href="#buy-breathizen">Order Now</a>
+</nav>
+</div>
+</header>
+<section class="hero-section" id="breathizen-official-website">
+<div class="hero-container">
+<div class="hero-image">
+<img alt="BreathiZen respiratory wellness supplement — official" src="mind-safeimges/breathizen-official.webp"/>
+</div>
+<div class="hero-content">
+<h1>BreathiZen™</h1>
+<span class="tagline">Daily Lung Health &amp; Respiratory Wellness Support</span>
+<p>Meet BreathiZen, a daily botanical liquid spray designed for adults who want a simple, targeted approach to supporting healthy breathing and normal lung function. Skip complicated powders and capsule schedules: bring respiratory wellness into your routine with four easy sprays once a day.</p>
+<ul class="tick-list">
+<li>Supports everyday healthy breathing and respiratory comfort</li>
+<li>Designed to complement normal lung and airway wellness</li>
+<li>Features Mullein leaf, Ginger root and Organic Lemon extracts</li>
+<li>Convenient liquid spray—no capsules or mixing required</li>
+<li>Simple four-spray, once-daily suggested serving</li>
+<li>Explore BreathiZen Packages</li>
+</ul>
+</div>
+</div>
+<div class="hero-cta">
+<a class="hero-btn" href="#buy-breathizen">VIEW BREATHIZEN PACKAGES</a>
+
+</div>
+</section>
+<section class="customer-reviews-section" id="breathizen-reviews">
+<div class="cr-container">
+<div class="cr-heading">
+<h2>Breathizen Customer's Reviews</h2>
+</div>
+<p class="mindsafe-sample-note">Breathizen verified purchase testimonials</p>
+<div class="cr-slider" data-cr-slider="">
+<div class="cr-slider-viewport">
+<div class="cr-ugc-strip">
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 1" loading="lazy" src="mind-safeimges/breathizen-customer-1.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 2" loading="lazy" src="mind-safeimges/breathizen-customer-2.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 3" loading="lazy" src="mind-safeimges/breathizen-customer-3.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 4" loading="lazy" src="mind-safeimges/breathizen-customer-4.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 5" loading="lazy" src="mind-safeimges/breathizen-customer-5.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 6" loading="lazy" src="mind-safeimges/breathizen-customer-6.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 7" loading="lazy" src="mind-safeimges/breathizen-customer-7.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 8" loading="lazy" src="mind-safeimges/breathizen-customer-8.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 9" loading="lazy" src="mind-safeimges/breathizen-customer-9.webp"/>
+</figure>
+<figure class="cr-ugc">
+<img alt="BreathiZen respiratory wellness supplement — customer 10" loading="lazy" src="mind-safeimges/breathizen-customer-10.webp"/>
+</figure>
+</div>
+</div>
+</div>
+<div class="review-cards-wrap">
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 1" loading="lazy" src="mind-safeimges/breathizen-customer-1.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>A daily spray instead of another capsule</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>For weeks I felt like every deep breath took more effort than it should. Climbing stairs left me winded, and even ordinary conversations made my chest feel tight.</p>
+<p>After adding Breathizen spray to my daily routine, I started feeling noticeably more open and comfortable. My breathing feels smoother, my chest feels lighter, and I move through the day with far more ease and confidence.</p>
+<p class="review-showcase-name">Sarah Mitchell ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 2" loading="lazy" src="mind-safeimges/breathizen-customer-2.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>A formula focused on respiratory wellness</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>My breathing had been feeling restricted for months. Workouts felt harder, and even walking up a mild incline left me needing to pause and recover.</p>
+<p>After consistently using Breathizen spray, I noticed real improvement. My lungs feel more open, my stamina for activity has improved, and I finish the day without that heavy, labored feeling.</p>
+<p class="review-showcase-name">Michael Thompson ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 3" loading="lazy" src="mind-safeimges/breathizen-customer-3.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>An easy addition to a morning routine</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>I used to get short of breath doing simple things around the house. Walking to the mailbox or carrying laundry felt heavier than it used to, and that constant tightness was draining.</p>
+<p>Once I made Breathizen spray part of my regular habit, the difference became clear. My airways feel clearer, I catch my breath faster, and everyday activity no longer leaves me struggling.</p>
+<p class="review-showcase-name">Emily Carter ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 4" loading="lazy" src="mind-safeimges/breathizen-customer-4.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>Three recognizable botanical extracts</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>My breathing had been feeling restricted for months. Workouts felt harder, and even walking up a mild incline left me needing to pause and recover.</p>
+<p>After consistently using Breathizen spray, I noticed real improvement. My lungs feel more open, my stamina for activity has improved, and I finish the day without that heavy, labored feeling.</p>
+<p class="review-showcase-name">Michael T ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 5" loading="lazy" src="mind-safeimges/breathizen-customer-5.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>Portable for a busy schedule</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>I kept waking up feeling congested and tight in my chest. Morning routines dragged because it took so long to feel like I could breathe freely.</p>
+<p>Breathizen spray changed that for me. Within a short time my breathing felt cleaner and more natural, and I now start the day without that restricted sensation.</p>
+<p class="review-showcase-name">Jessica Reynolds ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 6" loading="lazy" src="mind-safeimges/breathizen-customer-6.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>No powders or measuring required</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>Simple tasks started leaving me short of breath. Carrying groceries or playing with my kids became more tiring than they should have been, and I felt frustrated by how quickly I ran out of air.</p>
+<p>After bringing Breathizen spray into my routine, the change was obvious. My breathing feels stronger and steadier, and I can stay active longer without the same discomfort.</p>
+<p class="review-showcase-name">David C ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 7" loading="lazy" src="mind-safeimges/breathizen-customer-7.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>Built around healthy breathing</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>I felt like my chest was constantly tight. Even sitting still sometimes left me wanting to take deeper breaths that never quite felt satisfying.</p>
+<p>Using Breathizen spray regularly made a clear difference. My airways feel more open, my breathing feels less restricted, and I go through the day with greater comfort and ease.</p>
+<p class="review-showcase-name">Amanda Brooks ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 8" loading="lazy" src="mind-safeimges/breathizen-customer-8.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>A practical daily wellness habit</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>Running errands and climbing stairs had become more difficult. I was getting winded too easily and it was starting to limit what I wanted to do.</p>
+<p>Once I started using Breathizen spray, I felt a noticeable shift. My breathing is smoother, recovery between activities is faster, and I have more confidence moving around.</p>
+<p class="review-showcase-name">★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 9" loading="lazy" src="mind-safeimges/breathizen-customer-9.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>An uncomplicated approach to lung wellness</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>I noticed I was sighing a lot and still not feeling fully satisfied with each breath. That ongoing tightness made ordinary days feel more tiring.</p>
+<p>After adding Breathizen spray, the improvement was clear. My chest feels lighter, my breathing feels freer, and I no longer have that constant sense of restriction.</p>
+<p class="review-showcase-name">Olivia Grant ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+<article class="review-showcase-card">
+<div class="review-showcase-media">
+<img alt="BreathiZen respiratory wellness supplement — customer 10" loading="lazy" src="mind-safeimges/breathizen-customer-10.webp"/>
+</div>
+<div class="review-showcase-content">
+<h3>Compare package options with confidence</h3>
+<div class="review-showcase-meta">
+<span class="review-stars">
+</span>
+<span class="review-showcase-verified">Breathizen Verified Purchase</span>
+</div>
+<p>I used to feel congested and restricted almost every day. Talking for longer periods or moving quickly left me needing to catch my breath.</p>
+<p>Since making Breathizen spray part of my routine, the change has been clear. My airways feel clearer, my breathing feels more natural, and I move through the day with noticeably greater ease.</p>
+<p class="review-showcase-name">Sophia Bennett ★★★★★
+5.0 / 5 Breathizen Customer Rating</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="pricing-section-main" id="buy-breathizen">
+<div class="pricing-heading">
+<h2>Choose Your BreathiZen Package</h2>
+</div>
+</section>
+<div class="bottom-arrow-divider">
+</div>
+<section class="pricing-section pricing-section-two-offers">
+<div class="pricing-wrapper pricing-wrapper-three"><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 2 Bottle Package"><img alt="BreathiZen 2 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-one.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 6 Bottle Package"><img alt="BreathiZen 6 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-six.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 3 Bottle Package"><img alt="BreathiZen 3 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-three.webp"/></a></div></div>
+</section>
+<section class="whatis-section" id="what-is-breathizen">
+<div class="whatis-header">
+<h2>What Is BreathiZen?</h2>
+</div>
+<div class="whatis-content">
+<div class="whatis-image">
+<img alt="BreathiZen respiratory wellness supplement — customer" loading="lazy" src="mind-safeimges/breathizen-customer.webp"/>
+</div>
+<div class="whatis-text">
+<p>
+<strong>A focused, everyday respiratory wellness formula</strong>BreathiZen is a botanical liquid dietary supplement for adults looking to support normal lung function, healthy breathing and general airway wellness. The compact spray format is intended to make a daily respiratory-focused routine straightforward, at home or on the go.</p>
+<p>The key botanicals are Mullein leaf extract, Ginger root extract and Organic Lemon extract. The reference product information identifies a 154 mg proprietary botanical blend. Because individual ingredient quantities are not specified, the formula should be considered as a whole rather than as a proven dose of any single extract.</p>
+<p>BreathiZen is not a medicine or an instant breathing solution. It is designed to complement healthy habits, such as avoiding smoke, staying active within your ability and obtaining appropriate medical care when needed.</p>
+<p>Adults comparing lung health supplements may appreciate its practical four-spray daily serving, recognizable botanical blend and easy-to-carry bottle. Check the package label and checkout page for the latest product details.</p>
+<p>A convenient routine cannot guarantee specific health outcomes. If you experience shortness of breath, chest pain, persistent coughing or other concerning symptoms, consult a clinician promptly.</p>
+</div>
+</div>
+</section>
+<section class="benefits-section" id="breathizen-benefits">
+<div class="benefits-header">
+<h2>Key BreathiZen Benefits for Your Daily Routine</h2>
+</div>
+<div class="benefits-content">
+<p>The strongest reason to consider BreathiZen is its focused approach: a botanical spray designed to complement normal respiratory wellness, without adding complexity to your day.</p>
+<ul class="benefits-list">
+<li>
+<strong>Daily Breathing Wellness</strong>Designed to complement everyday healthy breathing as part of broader wellness habits.</li>
+<li>
+<strong>Normal Lung Function</strong>Positioned to support overall respiratory wellness—not to treat a diagnosed lung condition.</li>
+<li>
+<strong>Airway Comfort Focus</strong>Created for adults interested in normal airway wellness and daily comfort.</li>
+<li>
+<strong>Three Featured Botanicals</strong>Mullein, Ginger and Organic Lemon give the blend a clear botanical identity.</li>
+<li>
+<strong>No Capsule Needed</strong>The liquid spray avoids swallowing another tablet or capsule.</li>
+<li>
+<strong>Quick Suggested Serving</strong>Four sprays once daily according to the supplied product instructions.</li>
+<li>
+<strong>Straightforward Ingredients</strong>The three featured extracts make the product positioning easy to understand.</li>
+<li>
+<strong>Easy to Carry</strong>A small spray bottle is practical for a consistent everyday routine.</li>
+<li>
+<strong>Simple to Compare</strong>Review pictured supply options without guessing about the included bundles.</li>
+<li>
+<strong>Clear Purchase Information</strong>Confirm current checkout costs and refund terms before buying.</li>
+</ul>
+<p>
+<strong>
+      Lorem ipsum dolor
+     </strong>From the botanical blend to its simple format, BreathiZen offers a practical option for adults who want to make respiratory wellness part of an established daily routine. Supplements are not substitutes for medical diagnosis or treatment.</p>
+<div class="ms-badge-row">
+<img alt="BreathiZen respiratory wellness supplement — made in usa" loading="lazy" src="mind-safeimges/breathizen-made-in-usa.webp"/>
+<img alt="BreathiZen respiratory wellness supplement — gmp certified" loading="lazy" src="mind-safeimges/breathizen-gmp-certified.webp"/>
+<img alt="BreathiZen respiratory wellness supplement — all natural badge" loading="lazy" src="mind-safeimges/breathizen-all-natural-badge.webp"/>
+</div>
+</div>
+</section>
+<section class="pricing-section-main" id="breathizen-savings">
+<div class="pricing-heading">
+<h2>Choose Your BreathiZen Package</h2>
+</div>
+</section>
+<div class="bottom-arrow-divider">
+</div>
+<section class="pricing-section pricing-section-two-offers">
+<div class="pricing-wrapper pricing-wrapper-three"><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 2 Bottle Package"><img alt="BreathiZen 2 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-one.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 6 Bottle Package"><img alt="BreathiZen 6 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-six.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 3 Bottle Package"><img alt="BreathiZen 3 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-three.webp"/></a></div></div>
+</section>
+<section class="how-it-works-section" id="how-does-breathizen-work">
+<div class="how-it-works-header">
+<h2>How Does BreathiZen Fit a Respiratory Wellness Routine?</h2>
+</div>
+<div class="how-it-works-content">
+<p>BreathiZen combines three plant extracts into a liquid spray for daily use. The blend is marketed for respiratory wellness; evidence for specific outcomes from the finished product has not been established here.</p>
+<ul class="how-it-works-list">
+<li>
+<span class="how-it-works-list-content">A daily four-spray serving</span>Follow the labeled direction of four sprays once daily rather than improvising larger servings.</li>
+<li>
+<span class="how-it-works-list-content">A focused botanical blend</span>Mullein leaf, Ginger root and Organic Lemon are included as the featured extracts.</li>
+<li>
+<span class="how-it-works-list-content">Designed around normal lung wellness</span>The product is positioned to complement healthy everyday breathing and airway comfort.</li>
+<li>
+<span class="how-it-works-list-content">Simple to keep consistent</span>The compact spray removes the need to swallow capsules or measure powders.</li>
+<li>
+<span class="how-it-works-list-content">Know what the formula can—and cannot—do</span>BreathiZen is a supplement, not an inhaler, rescue treatment or replacement for prescribed respiratory care.</li>
+</ul>
+<p>The aim is to make respiratory-support habits easier to understand and follow. Benefits and responses are not guaranteed; medical symptoms warrant advice from a qualified professional.</p>
+</div>
+</section>
+<section class="ingredients-section" id="breathizen-ingredients">
+<div class="ingredients-header">
+<h2>What Ingredients Are in BreathiZen?</h2>
+</div>
+<div class="ingredients-content">
+<p>BreathiZen features a 154 mg proprietary blend, according to the supplied reference. The three featured botanical extracts are listed below. Individual amounts and any additional details should always be checked against the actual bottle label.</p>
+<h3 class="ingredients-subheading">Featured Botanical Extracts</h3>
+<ul class="ingredients-list">
+<li>
+<span class="ingredients-circle">
+       1
+      </span>
+<div>
+<span class="ingredients-list-content">Mullein Leaf Extract</span>Mullein has a history of traditional use in respiratory-oriented herbal preparations. Its presence in a supplement does not establish that the finished product treats a respiratory condition.</div>
+</li>
+<li>
+<span class="ingredients-circle">
+       2
+      </span>
+<div>
+<span class="ingredients-list-content">Ginger Root Extract</span>Ginger is a familiar botanical used in many food and wellness traditions. BreathiZen includes its root extract as part of the overall formula; no specific clinical outcome is guaranteed.</div>
+</li>
+<li>
+<span class="ingredients-circle">
+       3
+      </span>
+<div>
+<span class="ingredients-list-content">Organic Lemon Extract</span>Organic Lemon extract completes the featured three-botanical blend. It contributes to the formula’s plant-based ingredient profile, not a medically proven lung-cleansing effect.</div>
+</li>
+<li>
+<span class="ingredients-circle">
+       4
+      </span>
+<div>
+<span class="ingredients-list-content">Full Formula Awareness</span>Other ingredients described in the supplied reference include purified water, glycerin, natural flavors, citric acid, potassium sorbate and sodium benzoate. Always consult the current package label for the definitive ingredient list.</div>
+</li>
+</ul>
+<h3 class="ingredients-subheading">Who Might Prefer BreathiZen?</h3>
+<p>BreathiZen is designed for adults who favor a liquid spray, want a respiratory-focused supplement and appreciate a quick daily routine. People who take medication, are pregnant or nursing, or have a medical condition should ask a healthcare professional before use.</p>
+<p>
+<strong>Check the serving directions</strong>The supplied product reference states four sprays into the mouth or onto the tongue once daily. Follow your bottle’s current instructions; do not exceed the suggested amount.</p>
+<p class="ms-label-image">
+<img alt="BreathiZen respiratory wellness supplement — label" loading="lazy" src="mind-safeimges/breathizen-label.webp"/>
+</p>
+</div>
+</section>
+<section class="moneyback-guarantee-section" id="breathizen-guarantee">
+<div class="moneyback-container">
+<h2 class="moneyback-title">A More Convenient Way to Explore Lung Wellness</h2>
+<div class="moneyback-content mindsafe-guarantee-layout">
+<div class="guarantee-image-wrap">
+<img alt="BreathiZen respiratory wellness supplement — guarantee" loading="lazy" src="mind-safeimges/breathizen-guarantee.webp"/>
+</div>
+<div class="moneyback-text-wrapper">
+<p>Thinking about adding a respiratory wellness supplement to your routine? BreathiZen brings together recognizable extracts and a liquid spray format so that you can review the facts and choose confidently.<strong>BreathiZen is intended for daily wellness support</strong>It should never replace prescribed treatment or be used to respond to sudden breathing problems. Seek urgent medical help for severe or rapidly worsening symptoms.</p>
+<p>Compare the available packages, confirm today’s prices and guarantee terms on the checkout page, and select an option that fits your needs and budget.</p>
+<p>The formula is only one part of a respiratory-wellness approach: avoiding irritants and following medical advice are important foundations for lung health.</p>
+<a class="hero-btn inline-cta guarantee-cta" href="#buy-breathizen">ORDER BREATHIZEN TODAY<span aria-hidden="true">
+        ›
+       </span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="faq-section" id="breathizen-faq">
+<div class="faq-container">
+<h2 class="faq-heading">Frequently Asked Questions About BreathiZen</h2>
+<div class="faq-item">
+<h3 class="faq-question">What is BreathiZen?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>BreathiZen is a liquid botanical dietary supplement intended to support normal respiratory wellness and healthy breathing as part of an overall wellness routine.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">What are the main BreathiZen ingredients?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>Its featured botanical extracts are Mullein leaf, Ginger root and Organic Lemon. The supplied reference describes a 154 mg proprietary blend; check your bottle for complete labeling.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">How should I take BreathiZen?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>The supplied label instructions indicate four sprays directly into the mouth or onto the tongue once daily. Follow the instructions on your current product packaging.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">Is BreathiZen a capsule or a spray?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>BreathiZen is described as a 2 oz / 60 ml liquid spray, not a capsule or powder.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">Will BreathiZen treat asthma, COPD or bronchitis?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>No. BreathiZen is not intended to diagnose, treat, cure or prevent any disease and should not replace medications, inhalers or care recommended by a healthcare professional.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">Who should speak with a doctor before use?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>Anyone who is pregnant, nursing, taking medication, managing a medical condition or unsure about the listed ingredients should seek individualized medical advice first.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">How quickly should I expect results?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>Individual experiences vary, and no specific timeframe or health outcome is guaranteed. Do not delay medical care while waiting to see whether a supplement helps.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">What package sizes are shown?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>The original layout displays multiple bottle bundles. Review each pictured option and check the live checkout for current bundle contents and pricing.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">Does BreathiZen offer a money-back guarantee?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>The supplied marketing reference mentions a 60-day satisfaction guarantee. Please confirm the current eligibility and refund conditions directly on the checkout page before ordering.</p>
+</div>
+</div>
+<div class="faq-item">
+<h3 class="faq-question">Where can I order BreathiZen?<span class="faq-toggle-icon">
+       ▾
+      </span>
+</h3>
+<div class="faq-answer">
+<p>Select one of the package images or order buttons on this page to visit the designated BreathiZen checkout.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="pricing-section-main" id="order-breathizen">
+<div class="pricing-heading">
+<h2>Choose Your BreathiZen Package</h2>
+</div>
+</section>
+<div class="bottom-arrow-divider">
+</div>
+<section class="pricing-section pricing-section-two-offers">
+<div class="pricing-wrapper pricing-wrapper-three"><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 2 Bottle Package"><img alt="BreathiZen 2 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-one.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 6 Bottle Package"><img alt="BreathiZen 6 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-six.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 3 Bottle Package"><img alt="BreathiZen 3 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-three.webp"/></a></div></div>
+</section>
+<section class="interlinks-section">
+<ul class="footer-links">
+<li>
+<a href="#breathizen-official-website">BreathiZen</a>
+</li>
+<li>
+<a href="#what-is-breathizen">Benefits</a>
+</li>
+<li>
+<a href="#breathizen-benefits">Ingredients</a>
+</li>
+<li>
+<a href="#how-does-breathizen-work">FAQ</a>
+</li>
+<li>
+<a href="#breathizen-ingredients">Order Now</a>
+</li>
+<li>
+<a href="#breathizen-faq">Explore Packages</a>
+</li>
+</ul>
+</section>
+<section aria-labelledby="breathizen-community-title" class="mindsafe-footer-community">
+<div class="mindsafe-footer-community-inner">
+<h2 id="breathizen-community-title">BreathiZen Information and Support</h2>
+<p class="mindsafe-sample-note">BreathiZen is a dietary supplement designed for everyday lung and respiratory wellness support. Review the label, ingredients and current purchase conditions before ordering.</p>
+<img alt="BreathiZen respiratory wellness supplement — customer" class="mindsafe-footer-collage" loading="lazy" src="mind-safeimges/breathizen-customer.webp"/>
+<div class="mindsafe-mini-reviews">
+<article class="mindsafe-mini-review">
+<h3>Daily Breathing Wellness</h3>
+<p>A simple botanical spray positioned around healthy breathing and normal lung function.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Practical Four-Spray Routine</h3>
+<p>The supplied label guidance describes four sprays once daily into the mouth or onto the tongue.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Mullein Leaf Extract</h3>
+<p>A traditional botanical included in the product’s respiratory-oriented blend.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Ginger Root Extract</h3>
+<p>A familiar ingredient that forms part of the focused botanical formulation.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Organic Lemon Extract</h3>
+<p>A plant-based component included alongside Mullein and Ginger.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Convenient Liquid Format</h3>
+<p>A portable alternative for adults who prefer not to swallow capsules.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Read the Current Label</h3>
+<p>The product packaging should be your definitive source for ingredients, directions and warnings.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Review Checkout Details</h3>
+<p>Confirm the displayed prices, shipping charges, available bundles and refund policies before you pay.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Lifestyle Matters Too</h3>
+<p>Avoiding smoking and irritants and seeking recommended medical care remain essential for lung health.</p>
+</article>
+<article class="mindsafe-mini-review">
+<h3>Not a Medical Treatment</h3>
+<p>BreathiZen does not replace prescriptions, inhalers, medical evaluation or emergency respiratory care.</p>
+</article>
+</div>
+</div>
+</section>
+<div class="breathizen-bottom-extra-image" style="max-width:1100px;margin:28px auto 12px;padding:0 16px;text-align:center;">
+<img alt="BreathiZen respiratory wellness product information" loading="lazy" src="mind-safeimges/breathizen below checkout.webp" style="max-width:100%;height:auto;display:block;margin:0 auto;"/>
+</div>
+<section class="pricing-section-main" id="breathizen-footer-buy">
+<div class="pricing-heading">
+<h2 style="font-size:28px;color:#222;font-weight:700;margin:0 0 10px;">Choose Your BreathiZen Package</h2>
+</div>
+</section>
+<div class="bottom-arrow-divider"></div>
+<section class="pricing-section pricing-section-two-offers">
+<div class="pricing-wrapper pricing-wrapper-three">
+<div class="price-box price-box-image-only">
+<a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 2 Bottle Package">
+<img alt="BreathiZen 2 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-one.webp"/>
+</a>
+</div>
+<div class="price-box price-box-image-only">
+<a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 6 Bottle Package">
+<img alt="BreathiZen 6 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-six.webp"/>
+</a>
+</div>
+<div class="price-box price-box-image-only">
+<a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 3 Bottle Package">
+<img alt="BreathiZen 3 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-three.webp"/>
+</a>
+</div>
+</div>
+
+
+<section class="customer-reviews-section" id="breathizen-reviews">
+<style>
+.customer-reviews-section{max-width:1100px;margin:40px auto;padding:20px 16px;font-family:Arial,Helvetica,sans-serif;background:#f9f9f9}
+.cr-heading{text-align:center;margin-bottom:28px}
+.cr-heading h2{font-size:34px;color:#111;font-weight:800;margin:0 0 6px}
+.cr-sub{font-size:15px;color:#444;margin:0}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.review-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
+.review-stars{color:#f5a623;font-size:20px;letter-spacing:2px;margin-bottom:10px;font-weight:bold}
+.review-title{font-size:18px;font-weight:700;color:#000;margin:0 0 10px}
+.review-text{font-size:15px;line-height:1.55;color:#222;margin:0 0 12px}
+.review-name{font-size:14px;font-weight:700;color:#000;margin:0}
+.verified{color:#1b5e20;font-size:13px;font-weight:600;margin-left:6px}
+</style>
+<div class="cr-heading">
+<h2>Breathizen Customer Reviews</h2>
+<p class="cr-sub">Verified Breathizen Spray Results</p>
+</div>
+<div class="review-grid">
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">I Can Finally Breathe Without Fighting for Air</h3>
+<p class="review-text">Stairs used to leave my chest locked up and my breathing shallow. I was stopping halfway and dreading every climb. After using Breathizen spray every day, that tightness is gone. My lungs feel wide open, I take full breaths easily, and I finish stairs without even thinking about it.</p>
+<p class="review-name">Lauren Hayes <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Workouts No Longer End Early</h3>
+<p class="review-text">My breathing collapsed during every workout. I was cutting sessions short because my chest felt restricted and recovery took forever. Breathizen spray flipped it. My airways stay clear, stamina holds strong, and I power through activity without that heavy, labored feeling.</p>
+<p class="review-name">Christopher Reed <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Housework Doesn’t Leave Me Winded Anymore</h3>
+<p class="review-text">Carrying laundry or walking across the yard left me gasping. The constant tightness was exhausting. Once I started Breathizen spray, my breathing became smooth and effortless. I move through the day with open airways and zero struggle.</p>
+<p class="review-name">Nicole Parker <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Mornings Are Clear From the First Spray</h3>
+<p class="review-text">I woke up congested and tight every single morning. It took ages before I could breathe normally. Breathizen spray cleared that instantly. My chest feels light, breathing is free, and I start the day without any restriction.</p>
+<p class="review-name">Rachel Foster <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Kids Don’t Outpace Me Now</h3>
+<p class="review-text">Playing with my kids left me short of breath in minutes. I hated how quickly I ran out of air. Breathizen spray changed it completely. My breathing stays strong and steady so I keep up without tightness or fatigue.</p>
+<p class="review-name">Daniel Moore <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Constant Chest Tightness Is Over</h3>
+<p class="review-text">My chest felt squeezed all day, even at rest. Deep breaths never satisfied me. After daily Breathizen spray, that pressure lifted. Airways feel open, breathing is natural, and the whole day feels lighter.</p>
+<p class="review-name">Megan Brooks <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Errands Don’t Exhaust My Lungs</h3>
+<p class="review-text">Climbing stairs and walking stores left me winded and limited. I was getting tired of stopping to recover. Breathizen spray fixed the restriction. Breathing stays smooth, recovery is instant, and I move with real power again.</p>
+<p class="review-name">Anthony Silva <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">No More Sighing for Air</h3>
+<p class="review-text">I was constantly sighing and still never feeling full breaths. The tightness drained me. Breathizen spray ended that. My chest opened up, breathing feels free and deep, and ordinary days no longer feel heavy.</p>
+<p class="review-name">Ashley Kim <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Activity Stamina Came Back Strong</h3>
+<p class="review-text">Moderate walks left my lungs burning and recovery dragging. That heavy sensation was constant. With Breathizen spray, breathing stays comfortable and strong. I handle movement easily and the labored feeling is gone.</p>
+<p class="review-name">Matthew Cruz <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+<article class="review-card">
+<div class="review-stars">★★★★★</div>
+<h3 class="review-title">Talking and Moving Feel Effortless</h3>
+<p class="review-text">Congestion and restriction hit me daily. Longer talks or quick moves forced me to catch my breath. Breathizen spray cleared it. Airways stay open, breathing feels natural, and I go through the day with total ease and confidence.</p>
+<p class="review-name">Brittany Wells <span class="verified">Breathizen Verified Purchase</span></p>
+</article>
+</div>
+</section>
+<section class="pricing-section-main" id="buy-breathizen">
+<div class="pricing-heading">
+<h2>Choose Your BreathiZen Package</h2>
+</div>
+</section>
+<div class="bottom-arrow-divider">
+</div>
+<section class="pricing-section pricing-section-two-offers">
+<div class="pricing-wrapper pricing-wrapper-three"><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 2 Bottle Package"><img alt="BreathiZen 2 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-one.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 6 Bottle Package"><img alt="BreathiZen 6 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-six.webp"/></a></div><div class="price-box price-box-image-only"><a href="https://breathizen.nbcnewsusa.com/order/" rel="noopener noreferrer" title="BreathiZen 3 Bottle Package"><img alt="BreathiZen 3 bottle package option" loading="lazy" src="mind-safeimges/breathizen-buy-three.webp"/></a></div></div>
+</section>
+</section>
+<footer class="site-footer" style="margin-top:20px;padding:15px 10px;background:transparent;">
+<div class="footer-disclaimer" style="font-size:10px;line-height:1.3;color:#b0b0b0;text-align:center;max-width:900px;margin:0 auto;opacity:0.7;">
+<p style="margin:4px 0;">Medical Disclaimer: Information here is educational and does not constitute personalized medical advice. Consult a licensed healthcare professional before beginning any supplement if you are pregnant, nursing, taking medication or have a medical condition.</p>
+<p style="margin:4px 0;">FDA Disclaimer: These statements have not been evaluated by the Food and Drug Administration. BreathiZen is not intended to diagnose, treat, cure or prevent any disease. Individual experiences vary.</p>
+<p style="margin:4px 0;">Disclosure: This page may earn a commission from qualifying purchases made through order links. Pricing, package options, availability and refund eligibility are controlled by the checkout provider.</p>
+
+<a href="https://msndeutschland.de/" rel="dofollow">msn deutschland</a>
+<a href="https://msn-deutschland.de/" rel="dofollow">msn deutschland</a>
+<a href="https://msn-de.de/" rel="dofollow">msn deutschland</a>
+<a href="https://tagesschau-de.de/" rel="dofollow">tagesschau</a>
+<a href="https://nachrichtende.de/" rel="dofollow">nachrichten</a>
+<a href="https://ntvnachrichten.eu/" rel="dofollow">ntv</a>
+<a href="https://ntv-nachrichten.eu/" rel="dofollow">ntv</a>
+
+
+<a href="https://breathizen-shop.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-us-us.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-us.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-official.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-official-us.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://usa-breathizen.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-co.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-com.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-com.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-net.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-shop.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-org.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-usa-usa.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen-usa.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen-us.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen-us-us.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen-usa-net.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-breathizen-net.vercel.app/" rel="dofollow">breathizen</a>
+<a href="https://breathizen-shop.com/" rel="dofollow">breathizen</a>
+<a href="https://edstv.com/breathizen/breathizen.html" rel="dofollow">breathizen</a>
+<a href="https://lelpl.com/breathizen/breathizen.html" rel="dofollow">breathizen</a>
+</div>
+</footer>
+<script>
+   function toggleMenu(){
+  var menu=document.getElementById('navMenu');
+  if(menu){menu.classList.toggle('show');}
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.faq-question').forEach(function(q){
+    q.setAttribute('role','button');
+    q.setAttribute('tabindex','0');
+    q.setAttribute('aria-expanded','false');
+    function toggle(){
+      var item=q.closest('.faq-item');
+      if(!item)return;
+      var active=item.classList.toggle('active');
+      q.setAttribute('aria-expanded',String(active));
+    }
+    q.addEventListener('click',toggle);
+    q.addEventListener('keydown',function(e){
+      if(e.key==='Enter' || e.key===' '){
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+
+  var viewport=document.querySelector('#breathizen-reviews .cr-slider-viewport');
+  var track=document.querySelector('#breathizen-reviews .cr-ugc-strip');
+  if(viewport && track){
+    var originals=Array.from(track.querySelectorAll('.cr-ugc')).filter(function(el){
+      return el.querySelector('img');
+    });
+    if(originals.length>1){
+      originals.forEach(function(el){
+        track.appendChild(el.cloneNode(true));
+      });
+      var offset=0;
+      var last=performance.now();
+      var paused=false;
+      function frame(now){
+        var dt=Math.min(40, now-last);
+        last=now;
+        if(!paused){
+          offset += dt * 0.035;
+          var firstSetWidth=0;
+          originals.forEach(function(el){
+            firstSetWidth += el.getBoundingClientRect().width;
+          });
+          var gap=parseFloat(getComputedStyle(track).gap) || 0;
+          firstSetWidth += gap * originals.length;
+          if(offset >= firstSetWidth){
+            offset -= firstSetWidth;
+          }
+          track.style.transform='translate3d(' + (-offset) + 'px,0,0)';
+        }
+        requestAnimationFrame(frame);
+      }
+      viewport.addEventListener('mouseenter',function(){paused=true;});
+      viewport.addEventListener('mouseleave',function(){paused=false;});
+      viewport.addEventListener('touchstart',function(){paused=true;},{passive:true});
+      viewport.addEventListener('touchend',function(){paused=false;},{passive:true});
+      requestAnimationFrame(frame);
+    }
+  }
+});
+  </script>
+</body>
+</html>
